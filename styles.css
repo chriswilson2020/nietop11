@@ -1035,3 +1035,13 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 .climb-grid article b{
   font-size:clamp(3.2rem,7vw,6.2rem);
 }
+
+
+/* Two poster download cards */
+.download-grid.compact{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 920px;
+}
+@media (max-width: 700px){
+  .download-grid.compact{ grid-template-columns: 1fr; }
+}
